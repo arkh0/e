@@ -1,0 +1,447 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f2fa">
+  <meta name="description" content="Privacy policy for Emehmon Desk, an Android front-desk companion for the E-Mehmon registration service.">
+  <title>Privacy policy · Emehmon Desk</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --primary: #6750a4;
+      --on-primary: #fff;
+      --primary-container: #eaddff;
+      --on-primary-container: #21005d;
+      --secondary-container: #e8def8;
+      --on-secondary-container: #1d192b;
+      --tertiary-container: #ffd8e4;
+      --on-tertiary-container: #31111d;
+      --surface: #fdf8ff;
+      --surface-container-low: #f7f2fa;
+      --surface-container: #f0ecf4;
+      --surface-container-high: #eae6ee;
+      --on-surface: #1d1b20;
+      --on-surface-variant: #49454f;
+      --outline: #79747e;
+      --outline-variant: #cac4d0;
+      --shadow: 0 1px 2px rgb(29 27 32 / 9%), 0 8px 24px rgb(29 27 32 / 6%);
+      font-family: "Roboto", "Segoe UI", system-ui, -apple-system, sans-serif;
+      font-synthesis: none;
+      text-rendering: optimizeLegibility;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --primary: #d0bcff;
+        --on-primary: #381e72;
+        --primary-container: #4f378b;
+        --on-primary-container: #eaddff;
+        --secondary-container: #4a4458;
+        --on-secondary-container: #e8def8;
+        --tertiary-container: #633b48;
+        --on-tertiary-container: #ffd8e4;
+        --surface: #141218;
+        --surface-container-low: #1d1b20;
+        --surface-container: #211f26;
+        --surface-container-high: #2b2930;
+        --on-surface: #e6e1e9;
+        --on-surface-variant: #cac4d0;
+        --outline: #938f99;
+        --outline-variant: #49454f;
+        --shadow: 0 2px 4px rgb(0 0 0 / 22%), 0 12px 28px rgb(0 0 0 / 13%);
+      }
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--surface);
+      color: var(--on-surface);
+      line-height: 1.65;
+    }
+    a { color: var(--primary); text-underline-offset: .18em; }
+    a:hover { text-decoration-thickness: 2px; }
+    a:focus-visible, summary:focus-visible {
+      outline: 3px solid var(--primary);
+      outline-offset: 4px;
+      border-radius: 8px;
+    }
+    .skip-link {
+      position: absolute;
+      top: 8px;
+      left: 8px;
+      z-index: 2;
+      transform: translateY(-150%);
+      padding: 10px 16px;
+      border-radius: 100px;
+      background: var(--primary);
+      color: var(--on-primary);
+    }
+    .skip-link:focus { transform: translateY(0); }
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 1;
+      border-bottom: 1px solid var(--outline-variant);
+      background: color-mix(in srgb, var(--surface) 92%, transparent);
+      backdrop-filter: blur(16px);
+    }
+    .topbar-inner, main, footer {
+      width: min(100% - 40px, 960px);
+      margin-inline: auto;
+    }
+    .topbar-inner {
+      min-height: 68px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      color: var(--on-surface);
+      font-weight: 700;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+    .brand-mark {
+      width: 38px;
+      height: 38px;
+      display: grid;
+      place-items: center;
+      border-radius: 14px;
+      background: var(--primary-container);
+      color: var(--on-primary-container);
+    }
+    .brand-mark svg { width: 21px; height: 21px; }
+    nav { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 4px; }
+    nav a {
+      padding: 9px 13px;
+      border-radius: 100px;
+      color: var(--on-surface-variant);
+      font-size: .9rem;
+      font-weight: 600;
+      text-decoration: none;
+    }
+    nav a:hover { background: var(--surface-container); color: var(--on-surface); }
+    main { padding: 50px 0 64px; }
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin: 0 0 18px;
+      padding: 6px 12px;
+      border-radius: 100px;
+      background: var(--secondary-container);
+      color: var(--on-secondary-container);
+      font-size: .8rem;
+      font-weight: 700;
+      letter-spacing: .04em;
+      text-transform: uppercase;
+    }
+    .eyebrow svg { width: 16px; height: 16px; }
+    h1, h2, h3, p { margin-top: 0; }
+    h1 {
+      max-width: 760px;
+      margin-bottom: 16px;
+      font-size: clamp(2.35rem, 7vw, 4.2rem);
+      font-weight: 650;
+      letter-spacing: -.045em;
+      line-height: 1.08;
+    }
+    .lead {
+      max-width: 760px;
+      margin-bottom: 24px;
+      color: var(--on-surface-variant);
+      font-size: clamp(1.08rem, 2.4vw, 1.28rem);
+      line-height: 1.55;
+    }
+    .meta-row { display: flex; align-items: center; flex-wrap: wrap; gap: 10px; color: var(--on-surface-variant); font-size: .9rem; }
+    .meta-pill {
+      padding: 5px 11px;
+      border: 1px solid var(--outline-variant);
+      border-radius: 100px;
+    }
+    .summary {
+      margin: 38px 0 30px;
+      padding: clamp(22px, 4vw, 34px);
+      border-radius: 28px;
+      background: var(--primary-container);
+      color: var(--on-primary-container);
+      box-shadow: var(--shadow);
+    }
+    .summary h2 { margin-bottom: 8px; font-size: 1.3rem; }
+    .summary p { margin: 0; max-width: 790px; }
+    .quick-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+      margin: 18px 0 52px;
+    }
+    .quick-card {
+      min-height: 150px;
+      padding: 21px;
+      border-radius: 22px;
+      background: var(--surface-container-low);
+      border: 1px solid var(--outline-variant);
+    }
+    .quick-card .icon {
+      display: grid;
+      width: 36px;
+      height: 36px;
+      margin-bottom: 14px;
+      place-items: center;
+      border-radius: 13px;
+      background: var(--tertiary-container);
+      color: var(--on-tertiary-container);
+    }
+    .quick-card:nth-child(2) .icon { background: var(--secondary-container); color: var(--on-secondary-container); }
+    .quick-card:nth-child(3) .icon { background: var(--primary-container); color: var(--on-primary-container); }
+    .quick-card svg { width: 20px; height: 20px; }
+    .quick-card h3 { margin-bottom: 5px; font-size: 1rem; }
+    .quick-card p { margin: 0; color: var(--on-surface-variant); font-size: .91rem; line-height: 1.5; }
+    .section {
+      padding: 28px 0;
+      border-top: 1px solid var(--outline-variant);
+      scroll-margin-top: 90px;
+    }
+    .section h2 { margin-bottom: 8px; font-size: clamp(1.4rem, 3vw, 1.8rem); letter-spacing: -.02em; }
+    .section > p { max-width: 800px; color: var(--on-surface-variant); }
+    .section h3 { margin: 22px 0 6px; font-size: 1.08rem; }
+    .section ul { padding-left: 22px; }
+    .section li { margin: 7px 0; }
+    .data-list { display: grid; gap: 12px; margin-top: 20px; }
+    .data-item {
+      display: grid;
+      grid-template-columns: minmax(150px, .75fr) 2fr;
+      gap: 16px;
+      padding: 19px 20px;
+      border-radius: 20px;
+      background: var(--surface-container-low);
+      border: 1px solid var(--outline-variant);
+    }
+    .data-item strong { color: var(--on-surface); }
+    .data-item p { margin: 0; color: var(--on-surface-variant); }
+    .notice {
+      margin: 18px 0;
+      padding: 18px 20px;
+      border-left: 4px solid var(--primary);
+      border-radius: 4px 18px 18px 4px;
+      background: var(--surface-container);
+      color: var(--on-surface-variant);
+    }
+    .notice p:last-child { margin-bottom: 0; }
+    .contact-card {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      margin-top: 18px;
+      padding: 24px;
+      border-radius: 24px;
+      background: var(--surface-container-high);
+    }
+    .contact-card p { margin: 0; color: var(--on-surface-variant); }
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 44px;
+      padding: 0 20px;
+      border-radius: 100px;
+      background: var(--primary);
+      color: var(--on-primary);
+      font-weight: 700;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+    .button:hover { filter: brightness(1.08); text-decoration: none; }
+    footer {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 22px 0 34px;
+      border-top: 1px solid var(--outline-variant);
+      color: var(--on-surface-variant);
+      font-size: .88rem;
+    }
+    @media (max-width: 700px) {
+      .topbar-inner, main, footer { width: min(100% - 28px, 960px); }
+      .topbar-inner { min-height: 62px; gap: 8px; }
+      .brand { font-size: .93rem; }
+      .brand-mark { width: 34px; height: 34px; border-radius: 12px; }
+      nav a { padding: 8px; font-size: .82rem; }
+      main { padding-top: 36px; }
+      .quick-grid { grid-template-columns: 1fr; gap: 10px; margin-bottom: 38px; }
+      .quick-card { min-height: unset; display: grid; grid-template-columns: 38px 1fr; column-gap: 13px; align-items: start; padding: 16px; }
+      .quick-card .icon { grid-row: span 2; margin: 0; }
+      .quick-card h3 { margin: 0 0 3px; }
+      .data-item { grid-template-columns: 1fr; gap: 5px; }
+      .contact-card { align-items: flex-start; flex-direction: column; }
+      footer { flex-direction: column; gap: 6px; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to privacy policy</a>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="#top" aria-label="Emehmon Desk privacy policy home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M7 10V7a5 5 0 0 1 10 0v3M6 10h12a1.5 1.5 0 0 1 1.5 1.5v8A1.5 1.5 0 0 1 18 21H6a1.5 1.5 0 0 1-1.5-1.5v-8A1.5 1.5 0 0 1 6 10Z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 14v3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </span>
+        <span>Emehmon Desk</span>
+      </a>
+      <nav aria-label="Privacy policy sections">
+        <a href="#data">Data</a>
+        <a href="#services">Services</a>
+        <a href="#retention">Retention</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section id="top" aria-labelledby="page-title">
+      <p class="eyebrow">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3 19 6v5c0 4.6-3 8.2-7 10-4-1.8-7-5.4-7-10V6l7-3Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="m9 12 2 2 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Privacy policy
+      </p>
+      <h1 id="page-title">Know where your information goes.</h1>
+      <p class="lead">Emehmon Desk is an Android front-desk companion for the E-Mehmon registration service. This policy explains what the app handles, what it sends when you use its features, and which service controls each copy.</p>
+      <div class="meta-row">
+        <span class="meta-pill">Effective November 12, 2026</span>
+        <span>Applies to the Emehmon Desk Android app</span>
+      </div>
+    </section>
+
+    <section class="summary" aria-labelledby="summary-title">
+      <h2 id="summary-title">The short version</h2>
+      <p>Emehmon Desk does not keep an independent server-side guest-record archive, sell personal data, or use advertising or analytics in the app. When you ask the app to look up, register, edit, or check out a guest, it sends the relevant information to E-Mehmon. If you connect Accounting in Settings, limited stay details may sync to the Firebase project used by that Accounting service when the guest list is loaded or refreshed. Those services control their own server-side data.</p>
+    </section>
+
+    <section class="quick-grid" aria-label="Privacy highlights">
+      <article class="quick-card">
+        <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M4 7.5A2.5 2.5 0 0 1 6.5 5h11A2.5 2.5 0 0 1 20 7.5v9a2.5 2.5 0 0 1-2.5 2.5h-11A2.5 2.5 0 0 1 4 16.5v-9Z" stroke="currentColor" stroke-width="1.8"/><circle cx="9" cy="10" r="1.5" stroke="currentColor" stroke-width="1.6"/><path d="m5 17 4-4 3 3 2-2 5 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        <h3>Passport OCR runs on your device</h3>
+        <p>The selected image is read locally. The app sends the passport fields needed for the E-Mehmon request, not the image for OCR.</p>
+      </article>
+      <article class="quick-card">
+        <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3h11A2.5 2.5 0 0 1 20 5.5v13a2.5 2.5 0 0 1-2.5 2.5h-11A2.5 2.5 0 0 1 4 18.5v-13Z" stroke="currentColor" stroke-width="1.8"/><path d="M8 8h8M8 12h8M8 16h4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span>
+        <h3>E-Mehmon holds guest records</h3>
+        <p>Guest information is submitted to the E-Mehmon service through the hotel's signed-in account.</p>
+      </article>
+      <article class="quick-card">
+        <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3v3m0 12v3M3 12h3m12 0h3M5.64 5.64l2.12 2.12m8.48 8.48 2.12 2.12m0-12.72-2.12 2.12m-8.48 8.48-2.12 2.12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.8"/></svg></span>
+        <h3>Accounting sync is optional</h3>
+        <p>When connected, Firebase Authentication and Realtime Database support the Accounting integration.</p>
+      </article>
+    </section>
+
+    <section class="section" id="about">
+      <h2>App and developer</h2>
+      <p><strong>App:</strong> Emehmon Desk<br><strong>Developer:</strong> DINORA ALIJONOVNA KAZIMOVA<br><strong>Privacy contact:</strong> <a href="mailto:armankh190@gmail.com">armankh190@gmail.com</a></p>
+      <p>Emehmon Desk is a client application. It does not independently decide how E-Mehmon or an Accounting system stores or uses information entered into those services.</p>
+    </section>
+
+    <section class="section" id="data">
+      <h2>Information the app handles</h2>
+      <p>The app processes information only to provide the features you choose. Some information is processed on the phone; other information is sent to the service that performs the requested action.</p>
+      <div class="data-list">
+        <article class="data-item">
+          <strong>E-Mehmon sign-in</strong>
+          <p>Your E-Mehmon username and password are sent to E-Mehmon when you sign in. If you save a hotel login in Settings, the app keeps it in encrypted, app-private storage on the device. You can remove a saved login in Settings.</p>
+        </article>
+        <article class="data-item">
+          <strong>Guest and child details</strong>
+          <p>When you use guest lookup, registration, or editing, the app may send names, passport or other document number, date and place of birth, sex, nationality, citizenship, passport issue/expiry details, PINFL, visa or permit details, child names/dates of birth/genders, room, arrival/departure dates, visit/payment classifications, amounts, and related registration fields to E-Mehmon.</p>
+        </article>
+        <article class="data-item">
+          <strong>Checkout information</strong>
+          <p>When you check out a guest, the app sends that guest's identifier, the payment amount and type, and the hotel identifier to E-Mehmon. The app does not collect bank-card or bank-account details.</p>
+        </article>
+        <article class="data-item">
+          <strong>Accounting sync</strong>
+          <p>If you connect Accounting in Settings, Firebase Authentication receives the sign-in email and password. When the guest list is loaded or refreshed, Firebase Realtime Database may receive limited stay details used by Accounting: a guest or registration identifier, guest name, room, number of nights, check-in date, status, and timestamps. Re-sending an unpaid stay can also write that stay's details. Passport images and passport numbers are not included in these sync records.</p>
+        </article>
+        <article class="data-item">
+          <strong>On-device reminders, settings, and PDFs</strong>
+          <p>Preferences stay in app storage. Checkout reminders keep guest names and expected checkout dates on the device so Android can show local notifications. PDFs are generated locally and saved in the app's documents area or a folder you choose. If you share a PDF, the receiving app handles its copy.</p>
+        </article>
+        <article class="data-item">
+          <strong>Technical service data</strong>
+          <p>Firebase Authentication and Realtime Database may process technical information such as IP address and user-agent strings to provide and protect their services. Firebase Authentication also receives this app's Firebase identifier, and Firebase services may use an identifier for this app installation. The app does not request telephony identifiers such as an IMEI. See <a href="https://firebase.google.com/docs/android/play-data-disclosure">Firebase's Android data disclosure</a>.</p>
+        </article>
+      </div>
+      <div class="notice"><p><strong>Passport images:</strong> OCR uses Google's bundled ML Kit models on the device. Emehmon Desk does not upload the selected passport image for OCR. The app may download a guest photo already held by E-Mehmon to display it in guest details.</p></div>
+    </section>
+
+    <section class="section" id="use">
+      <h2>How information is used</h2>
+      <ul>
+        <li><strong>E-Mehmon:</strong> authenticate the hotel's account, verify passport details, retrieve guest records and photos, register or edit a stay, and process checkout requests.</li>
+        <li><strong>Firebase Accounting:</strong> authenticate the Accounting account and, when connected, synchronize the limited stay details listed above as guest records are loaded or refreshed.</li>
+        <li><strong>On the device:</strong> read passport text, show guest information, schedule checkout reminders, save app preferences, and create PDFs.</li>
+        <li><strong>Google ML Kit:</strong> recognize text on-device. Google states that image input and recognition output are not sent to its servers; ML Kit may send API usage/performance metrics and contact Google for service updates. See <a href="https://developers.google.com/ml-kit/terms">ML Kit's privacy terms</a>.</li>
+      </ul>
+      <p>The app does not include an advertising SDK or Google Analytics SDK and does not use guest information for advertising or profiling.</p>
+    </section>
+
+    <section class="section" id="services">
+      <h2>Third-party services</h2>
+      <h3>E-Mehmon</h3>
+      <p>Guest registration and management requests go to the <a href="https://emehmon.uz/">official E-Mehmon service</a> over HTTPS. E-Mehmon receives and stores the records submitted to its platform and controls its own purposes, security, retention, and deletion process. This Emehmon Desk policy does not replace or describe E-Mehmon's policy.</p>
+      <div class="notice"><p>For the current privacy notice, retention period, or deletion process for records held by E-Mehmon, consult the official E-Mehmon service or the administrator of the hotel's E-Mehmon account. The public guest-registration portal did not provide a verifiable privacy-policy URL when this page was prepared, so this page does not link to a policy for a different Emehmon product.</p></div>
+      <h3>Firebase by Google</h3>
+      <p>Firebase Authentication and Realtime Database are used only for the Accounting integration. Google describes how these SDKs handle service and technical data in its <a href="https://firebase.google.com/support/privacy">Firebase privacy and security information</a>. No Firebase Analytics, Crashlytics, or advertising SDK is included in the app.</p>
+      <h3>Android sharing and file picker</h3>
+      <p>If you choose a folder or share a PDF, Android passes the file or permission to the folder or app you selected. That service's own privacy policy applies to the copy it receives.</p>
+    </section>
+
+    <section class="section" id="security">
+      <h2>Security</h2>
+      <p>Connections from the app to E-Mehmon and Firebase use encrypted HTTPS/TLS. Cleartext HTTP traffic is disabled in the app. Saved E-Mehmon passwords are stored in encrypted app-private storage where Android secure storage is available. Passport OCR runs locally. Keep the device and service credentials protected; no software or transmission method can be guaranteed completely secure.</p>
+    </section>
+
+    <section class="section" id="retention">
+      <h2>Retention and deletion</h2>
+      <ul>
+        <li><strong>On this device:</strong> saved sign-ins can be removed in Settings. App preferences and reminder cache remain in app storage until cleared or the app is uninstalled. Delete exported PDFs from the folder where they were saved. Shared copies must be deleted in the receiving app.</li>
+        <li><strong>On E-Mehmon:</strong> the E-Mehmon service and the hotel account holder control guest-record retention and deletion. Contact E-Mehmon or the hotel's account administrator to request access, correction, or deletion.</li>
+        <li><strong>In Firebase Accounting:</strong> signing out disconnects the app but does not delete Firebase records or the Firebase account. Contact the Accounting/Firebase project administrator to request deletion or correction.</li>
+        <li><strong>In Emehmon Desk:</strong> the app keeps no server-side guest-record archive. Records submitted to E-Mehmon or the Accounting Firebase project remain subject to those services' controls.</li>
+      </ul>
+    </section>
+
+    <section class="section" id="changes">
+      <h2>Policy changes</h2>
+      <p>This policy will be updated if the app's data handling changes. The effective date at the top shows the latest revision.</p>
+    </section>
+
+    <section class="section" id="contact">
+      <h2>Questions or privacy requests</h2>
+      <p>Contact the Emehmon Desk developer for questions about this app. For records already submitted to E-Mehmon or Accounting, contact the relevant service or account administrator because the app developer cannot change or delete their server-side records.</p>
+      <div class="contact-card">
+        <div>
+          <strong>DINORA ALIJONOVNA KAZIMOVA</strong>
+          <p>Privacy contact · <a href="mailto:armankh190@gmail.com">armankh190@gmail.com</a></p>
+        </div>
+        <a class="button" href="mailto:armankh190@gmail.com?subject=Emehmon%20Desk%20privacy">Email the developer</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>Privacy policy for Emehmon Desk</span>
+    <span>Last updated November 12, 2026</span>
+  </footer>
+</body>
+</html>
